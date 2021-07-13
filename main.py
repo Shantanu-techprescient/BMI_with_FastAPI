@@ -5,10 +5,10 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 import sys
 
-sys.path.append('/.../FastAPI/crud')
+sys.path.append('/.../crud')
 from update_file import write_comment
 from show_comments import show_data
-sys.path.append('/.../FastAPI/router')
+sys.path.append('/.../router')
 from calculate_bmi import calculate, bmi_category
 
 app = FastAPI()
