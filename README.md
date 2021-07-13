@@ -1,5 +1,8 @@
 # BMI_with_FastAPI
-
+  
+This API is developed in python using FastAPI to calculate BMI of the user and store the response in a text file.    
+  
+  
 Instructions:  
 Step 1: Install required libraries  
 -> pip install fastapi  
