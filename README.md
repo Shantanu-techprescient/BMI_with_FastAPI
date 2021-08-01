@@ -7,9 +7,9 @@ Instructions:
 Step 1: Install required libraries  
 -> pip install fastapi  
 -> pip install pydantic  
--> pip install uvicorn
--> pip install sqlalchemy
--> pip install python-multiport
+-> pip install uvicorn  
+-> pip install sqlalchemy  
+-> pip install python-multiport  
 
 Step 2: Open Command prompt and change directory where program files are present  
 
