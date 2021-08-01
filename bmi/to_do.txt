@@ -1,0 +1,23 @@
+[CODING] Review comments from the Demo. (done)
+Virtual Environments: https://www.geeksforgeeks.org/python-virtual-environment/
+[CODING] pipenv: https://realpython.com/pipenv-guide/  (Done)
+[CODING] FastAPI Testing: https://fastapi.tiangolo.com/tutorial/testing/ 
+Authentication: https://blog.restcase.com/4-most-used-rest-api-authentication-methods/
+[CODING] FastAPI Oauth2: https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/ (done)
+
+https://fastapi.tiangolo.com/tutorial/query-params/?h=skip#defaults
+
+https://stackoverflow.com/questions/41305129/sqlalchemy-dynamic-filtering#41309069
+
+
+
+
+pagination:
+divide into chunks
+1: page size -> 20 (user)
+2: user can request any page number (default 1)
+
+
+
+
+
