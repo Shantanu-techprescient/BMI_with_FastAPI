@@ -1,0 +1,64 @@
+work flow for each api:
+
+api 1: calculate bmi and store in database
+inputs : name, age_yr, height_cm, weight_kg
+->	
+	1: check if person in already registered or not:
+		details = get_user_by_name(name, db)
+		if not details:
+			1.1: calculate bmi
+				bmi = calculate_bmi(age, height, weight)
+				category = get_category(bmi)
+				add_user_to_db(name, age, height, weigth, bmi, category)
+				comment = get_comment(name, age, height, bmi, category)
+				return {"comment": comment}
+		else:
+			1.2: raise exception
+					fire UserAlreadyRegistered()
+
+api 2: View users data
+inputs: name
+-> 1: check if person is present in database or not
+		details = get_user_by_name(name, db)
+		if details:
+			2.1: show result to user
+				comment = get_comment_from_db(name, db)
+							fetch data from db
+							category = get_category(bmi)
+							comment = get_comment(name, age, height, bmi, category, last_updated)
+				return {"comment": comment}
+		else:
+			2.2: raise exception
+				fire UserNotFound()
+
+api 3: delete user's data
+input: name
+-> 1: check if preson is in db or not
+		details = get_user_by_name(name, db)
+		if details:
+			3.1 delete the record
+				delete_user_by_name(name, db)
+				return {comment: "Deleted"}
+		else:
+			3.2 raise exception
+				fire UserNotFound()
+
+api 4: update user's data
+input: name, age, height, weight
+-> check if person is present
+	details = get_user_by_name(name, db)
+	if details:
+		3.1: update the record
+			bmi = calculate_bmi(age,height, weight)
+			update_user_bmi(name, age, height, weight, bmi)
+	else:
+		3.2 raise exception
+			fire UserNotRegistered()
+
+api 5: filter by name
+input: name
+-> get_all_users_by_name(name, db)
+
+api 6: filter by age
+input: age
+->  get_all_user_by_age(age, db)
