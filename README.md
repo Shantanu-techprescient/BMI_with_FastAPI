@@ -21,6 +21,8 @@ step 5:  In the url section type "http://127.0.0.1:8000/docs" which will open sw
 To test every api, you need to first authorize your self. Default username = 'shantanu' and password = 'password'. If you didn't authorized, on testing every api, you'll see response {"details" : "Not authenticated"}
 
 Option 1: Calculate BMI  
+
+
 Here you can enter name, age(yrs), weight(kgs), height(cms) and then execute it. age should be greater than 12yr, weight should be greater than 45.50kgs and height should be greater than 152.40cms. If the data is not valid, api will raise exception for each invalid data. If the all the data is valid, then after execution of api, it will add the data in database and will return json response containing name, age, height, weight, bmi and last updated data.  
 
 Option 2: Delete BMI from db.
